@@ -19,13 +19,13 @@ AI agents run each roadmap item through spec, build, test, and deploy, with huma
 
 ```mermaid
 flowchart LR
-  A[Roadmap item] --> B[Spec]
-  B --> C{Review gate}
-  C --> D[Agent build]
-  D --> E[CI tests]
-  E --> F[Deploy to Cloudflare]
-  F --> G[Metrics and feedback]
-  G --> A
+  A[Todo] --> B[Spec]
+  B --> C{Review}
+  C --> D[Build]
+  D --> E[Test]
+  E --> F[Deploy]
+  F --> G[Measure]
+  G -.-> A
 ```
 
 ## Platform
@@ -34,11 +34,13 @@ Every app starts on the same stack and the same in-house packages.
 
 ```mermaid
 flowchart TB
-  Web[Next.js static site<br/>Cloudflare Pages] --> API[Cloudflare Worker API]
-  iOS[SwiftUI iOS app] --> API
-  API --> DB[(D1 SQLite)]
-  API --> Pkg[Shared packages<br/>auth · OTP · email · forms · IAP · telemetry · roles]
+  Web[Web: Next.js] --> API[API: Workers]
+  iOS[iOS: SwiftUI] --> API
+  API --> DB[(D1 database)]
+  API --> Pkg[Shared packages]
 ```
+
+Shared packages cover auth, OTP login, email, forms, in-app purchases, telemetry, and staff roles.
 
 ## Selected products
 
