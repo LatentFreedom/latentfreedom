@@ -1,4 +1,7 @@
-### Founder of [LatentEdge](https://latentedge.io) - AI products, automation, and full-stack engineering for web and iOS.
+### Full-Stack · System Architecture · AI Engineering · LLM Ops
+
+**Forward deployed by habit:** I work next to the people who have the problem, design the system, and ship it end to end.
+Founder of [LatentEdge](https://latentedge.io).
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
@@ -7,11 +10,10 @@
 ![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
-## Portfolio
-
-| Live | Beta | Alpha | In development | iOS apps | Shared packages |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| **35** | **11** | **27** | **43** | **15** | **16** |
+| Full-Stack | System Architecture | AI Engineering | LLM Ops |
+|:---:|:---:|:---:|:---:|
+| **80+** | **19** | **7** | **11.8B** |
+| web and iOS projects shipped | shared packages under one framework | department agents that operate the portfolio | tokens in 30 days, measured and tuned |
 
 ## Delivery pipeline
 
@@ -46,15 +48,12 @@ Shared packages cover auth, OTP login, email, forms, in-app purchases, telemetry
 
 | Product | Category | Platform |
 |---|---|---|
-| [Write My Card AI](https://writemycardai.com) | AI writing | Web |
-| [Brain Dump](https://braindump.latentedge.io) | Voice-first productivity | Web |
 | [The Grateful List](https://thegratefullist.com) | Wellness | Web, iOS |
+| [Lost Pet Radar](https://lostpetradar.com) | Community alerts | Web |
+| [Vibe Helping](https://vibehelping.com) | Website review tool | Web |
+| [WriteMyCard AI](https://writemycardai.com) | AI writing | Web |
 | [Cernita](https://cernita.latentedge.io) | Photo management | Web, iOS |
 | [SkatePhone](https://skatephone.com) | Sports | Web, iOS |
-| [Lost Pet Radar](https://lostpetradar.com) | Community alerts | Web |
-| [Life Lore](https://lifelore.latentedge.io) | Personal writing | Web |
-| [Vibe Helping](https://vibehelping.com) | Website review tool | Web |
-| [Feedback](https://feedback.latentedge.io) | Feedback widget | Web |
 
 ## Open source
 
@@ -64,5 +63,31 @@ Shared packages cover auth, OTP login, email, forms, in-app purchases, telemetry
 | [hometodo](https://github.com/LatentFreedom/hometodo) | Self-hosted tracker for home and life tasks |
 | [appstore-notifications-package](https://github.com/LatentFreedom/latentedge-appstore-notifications-package) | App Store Server Notifications V2 for Cloudflare Workers |
 | [cloudflare_bulk_dns_updater](https://github.com/LatentFreedom/cloudflare_bulk_dns_updater) | Bulk-update A records across Cloudflare zones |
+
+## Toolbox
+
+```jsonc
+// ~/.config/stack.json
+{
+  "daily_drivers": ["Claude Code", "VS Code", "Xcode", "Terminal", "tmux"],
+  "languages": ["TypeScript", "Swift", "Python", "PHP", "C/C++"],
+  "edge": {
+    "compute": "Cloudflare Workers",
+    "data": ["D1", "R2", "Vectorize"],
+    "deploys": "git push" // CI does the rest
+  },
+  "ai": {
+    "models": ["Claude", "Grok", "Workers AI"],
+    "local": "Ollama", // for the offline experiments
+    "agents": "LatentEdge OS", // seven departments, one roadmap
+    "protocols": ["MCP"]
+  },
+  "ops": ["Docker", "AWS EC2", "Wireshark"],
+  "os": ["macOS", "Ubuntu", "RHEL"],
+  "certs": ["Security+", "Linux+"]
+}
+```
+
+**Education:** B.S. Computer Science, Indiana University - Systems & Networks, minors in Cybersecurity and General Business.
 
 **Contact:** [nic@latentedge.io](mailto:nic@latentedge.io) · [latentedge.io](https://latentedge.io)
