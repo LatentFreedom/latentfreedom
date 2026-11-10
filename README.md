@@ -1,48 +1,66 @@
-# Hi, I'm Nic 👋
+### Founder of [LatentEdge](https://latentedge.io) - AI products, automation, and full-stack engineering for web and iOS.
 
-I build and ship software products end to end: idea, code, deploy, and growth.
-I run [LatentEdge](https://latentedge.io), where I build practical AI and automation for small businesses and do forward deployed AI engineering with startups.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?logo=cloudflare&logoColor=white)
+![D1](https://img.shields.io/badge/D1_SQLite-003B57?logo=sqlite&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 
-Right now I run a portfolio of 100+ web apps, iOS apps, and shared packages, with 30+ of them live in production.
+## Portfolio
 
-## What I do
+| Live | Beta | Alpha | In development | iOS apps | Shared packages |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **35** | **11** | **27** | **43** | **15** | **16** |
 
-- **Full-stack web apps** - Next.js, TypeScript, Cloudflare Workers, D1, and Pages, from first commit to production.
-- **Native iOS apps** - SwiftUI, StoreKit in-app purchases, and App Store Server Notifications, shipped through TestFlight to the App Store.
-- **AI products** - LLM features, local RAG, voice-first input, and AI agents that do real work.
-- **Agent-run engineering** - LatentEdge OS, my own system where AI agents spec, build, test, and deploy roadmap work across the whole portfolio.
-- **Shared platform** - my own npm packages for auth, OTP login, email, forms, in-app purchases, telemetry, and staff roles, so every new app starts on the same stack.
-- **Client sites and automation** - fast, owner-editable sites and workflow automation for local businesses.
+## Delivery pipeline
 
-## Live work
+AI agents run each roadmap item through spec, build, test, and deploy, with human review at the gates that matter.
 
-| Product | What it is |
-|---|---|
-| [Write My Card AI](https://writemycardai.com) | AI greeting-card messages when you do not know what to write |
-| [Brain Dump](https://braindump.latentedge.io) | Talk through what is on your mind and get organized, prioritized todos |
-| [The Grateful List](https://thegratefullist.com) | Daily gratitude app, web and iOS |
-| [Cernita](https://cernita.latentedge.io) | iOS app that turns your photo library into a swipe deck |
-| [SkatePhone](https://skatephone.com) | Skateboarding iOS app and site |
-| [Lost Pet Radar](https://lostpetradar.com) | Lost and found pet alerts |
-| [Life Lore](https://lifelore.latentedge.io) | Write and keep your personal stories |
-| [Vibe Helping](https://vibehelping.com) | Website review comments pinned to page elements |
-| [Nowhere Computer](https://nowherecomputer.com) | A retro computer interface set in a haunted farmhouse attic |
-| [Feedback](https://feedback.latentedge.io) | Drop-in feedback widget and dashboard for any site |
+```mermaid
+flowchart LR
+  A[Roadmap item] --> B[Spec]
+  B --> C{Review gate}
+  C --> D[Agent build]
+  D --> E[CI tests]
+  E --> F[Deploy to Cloudflare]
+  F --> G[Metrics and feedback]
+  G --> A
+```
 
-More at [imnotbot.com](https://imnotbot.com) and [latentedge.io](https://latentedge.io).
+## Platform
+
+Every app starts on the same stack and the same in-house packages.
+
+```mermaid
+flowchart TB
+  Web[Next.js static site<br/>Cloudflare Pages] --> API[Cloudflare Worker API]
+  iOS[SwiftUI iOS app] --> API
+  API --> DB[(D1 SQLite)]
+  API --> Pkg[Shared packages<br/>auth · OTP · email · forms · IAP · telemetry · roles]
+```
+
+## Selected products
+
+| Product | Category | Platform |
+|---|---|---|
+| [Write My Card AI](https://writemycardai.com) | AI writing | Web |
+| [Brain Dump](https://braindump.latentedge.io) | Voice-first productivity | Web |
+| [The Grateful List](https://thegratefullist.com) | Wellness | Web, iOS |
+| [Cernita](https://cernita.latentedge.io) | Photo management | Web, iOS |
+| [SkatePhone](https://skatephone.com) | Sports | Web, iOS |
+| [Lost Pet Radar](https://lostpetradar.com) | Community alerts | Web |
+| [Life Lore](https://lifelore.latentedge.io) | Personal writing | Web |
+| [Vibe Helping](https://vibehelping.com) | Website review tool | Web |
+| [Feedback](https://feedback.latentedge.io) | Feedback widget | Web |
 
 ## Open source
 
-- [status-page](https://github.com/LatentFreedom/status-page) - self-hosted status page on Cloudflare: Next.js + Worker + D1, one config file.
-- [hometodo](https://github.com/LatentFreedom/hometodo) - self-hosted tracker for home and life todos.
-- [latentedge-appstore-notifications-package](https://github.com/LatentFreedom/latentedge-appstore-notifications-package) - verify App Store Server Notifications V2 on Cloudflare Workers with Web Crypto only.
-- [cloudflare_bulk_dns_updater](https://github.com/LatentFreedom/cloudflare_bulk_dns_updater) - update every A record across your Cloudflare zones at once.
-- Discord bots for crypto prices, memecoin market caps, and voice announcements.
+| Repository | Description |
+|---|---|
+| [status-page](https://github.com/LatentFreedom/status-page) | Self-hosted status page: Next.js, Worker, and D1 from one config file |
+| [hometodo](https://github.com/LatentFreedom/hometodo) | Self-hosted tracker for home and life tasks |
+| [appstore-notifications-package](https://github.com/LatentFreedom/latentedge-appstore-notifications-package) | App Store Server Notifications V2 for Cloudflare Workers |
+| [cloudflare_bulk_dns_updater](https://github.com/LatentFreedom/cloudflare_bulk_dns_updater) | Bulk-update A records across Cloudflare zones |
 
-## Stack
-
-TypeScript · Next.js · React · Cloudflare Workers · D1 · Swift · SwiftUI · Python · Node.js · LLM APIs
-
-## Contact
-
-Need an app, an AI feature, or an automation built? Email [nic@latentedge.io](mailto:nic@latentedge.io).
+**Contact:** [nic@latentedge.io](mailto:nic@latentedge.io) · [latentedge.io](https://latentedge.io)
