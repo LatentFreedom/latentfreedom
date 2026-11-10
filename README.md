@@ -15,34 +15,13 @@ Founder of [LatentEdge](https://latentedge.io).
 | **80+** | **19** | **7** | **11.8B** |
 | web and iOS projects shipped | shared packages under one framework | department agents that operate the portfolio | tokens in 30 days, measured and tuned |
 
-## Delivery pipeline
+## How the portfolio ships
 
-AI agents run each roadmap item through spec, build, test, and deploy, with human review at the gates that matter.
+AI agents pick up approved roadmap todos, write a spec, build, test, and deploy. Risky changes wait for human approval.
 
-```mermaid
-flowchart LR
-  A[Todo] --> B[Spec]
-  B --> C{Review}
-  C --> D[Build]
-  D --> E[Test]
-  E --> F[Deploy]
-  F --> G[Measure]
-  G -.-> A
-```
+https://github.com/user-attachments/assets/f6f91191-021c-4bd3-832a-7f3670b2afc5
 
-## Platform
-
-Every app starts on the same stack and the same in-house packages.
-
-```mermaid
-flowchart TB
-  Web[Web: Next.js] --> API[API: Workers]
-  iOS[iOS: SwiftUI] --> API
-  API --> DB[(D1 database)]
-  API --> Pkg[Shared packages]
-```
-
-Shared packages cover auth, OTP login, email, forms, in-app purchases, telemetry, and staff roles.
+Every app shares one stack: Next.js on Cloudflare Pages, Workers APIs, D1, SwiftUI for iOS, and in-house packages for auth, OTP login, email, forms, in-app purchases, telemetry, and staff roles.
 
 ## Selected products
 
