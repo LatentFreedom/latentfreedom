@@ -67,6 +67,4 @@ Every app shares one stack: Next.js on Cloudflare Pages, Workers APIs, D1, Swift
 }
 ```
 
-**Education:** B.S. Computer Science, Indiana University - Systems & Networks, minors in Cybersecurity and General Business.
-
-**Contact:** [nic@latentedge.io](mailto:nic@latentedge.io) · [latentedge.io](https://latentedge.io)
+**Contact:** [latentedge.io](https://latentedge.io)
